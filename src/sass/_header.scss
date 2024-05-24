@@ -1,0 +1,11 @@
+.header {
+	min-height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url("../../src/img/main_img.png");
+	background-position: center;
+	background-size: cover;
+	color: white;
+}
