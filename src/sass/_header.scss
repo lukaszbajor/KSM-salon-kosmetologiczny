@@ -1,4 +1,5 @@
 .header {
+	padding: 1em;
 	min-height: 90vh;
 	display: flex;
 	justify-content: center;
@@ -7,5 +8,39 @@
 	background-image: url("../../src/img/main_img.png");
 	background-position: center;
 	background-size: cover;
+	text-align: center;
 	color: white;
+	&__title {
+		margin-bottom: 0.5em;
+		font-size: 4rem;
+		text-transform: uppercase;
+	}
+	&__text {
+		margin-bottom: 1em;
+		font-size: 2rem;
+	}
+	&__btns {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__btn {
+		margin-top: 1.4em;
+		padding: 0.5em 1.5em;
+		background-color: $docs-color;
+		border-radius: 20px;
+		border: none;
+		text-transform: uppercase;
+		font-family: "Montserrat", sans-serif;
+		font-size: 1.8rem;
+		font-weight: 600;
+		letter-spacing: 2px;
+		color: $pure-white;
+		&--reservation {
+			margin-top: 1.4em;
+			border: 2px solid $pure-white;
+			background-color: transparent;
+		}
+	}
 }
