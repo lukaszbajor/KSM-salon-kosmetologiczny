@@ -2,6 +2,7 @@
 	position: fixed;
 	width: 100%;
 	background-color: $pure-white;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	&__wrap {
 		padding: 1em;
 		display: flex;
