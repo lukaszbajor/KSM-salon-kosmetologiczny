@@ -10,8 +10,28 @@
 	}
 	&__logo {
 		img {
-			height: 100px;
+			height: 80px;
 		}
+	}
+	&__list {
+		padding-top: 15em;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		position: fixed;
+		top: -100%;
+		left: 0;
+		bottom: 100%;
+		background-color: $docs-color;
+		color: $pure-white;
+		transition: 0.3s;
+		&--showMenu {
+			top: 0;
+			bottom: 0;
+		}
+	}
+	&__link {
 	}
 	&__burger {
 		height: 30px;
@@ -35,6 +55,22 @@
 		}
 		span:last-child {
 			top: 100%;
+		}
+		&--active {
+			span {
+				background-color: $pure-white;
+			}
+			span:nth-child(1) {
+				top: 50%;
+				transform: rotate(45deg);
+			}
+			span:nth-child(2) {
+				display: none;
+			}
+			span:nth-child(3) {
+				top: 50%;
+				transform: rotate(-45deg);
+			}
 		}
 	}
 }
