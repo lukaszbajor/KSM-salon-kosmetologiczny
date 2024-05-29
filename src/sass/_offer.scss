@@ -1,5 +1,6 @@
 .offer {
 	min-height: 80vh;
+	padding-bottom: 6em;
 	position: relative;
 	background-image: url("/dist/img/offer_img.png");
 	background-position: center;
@@ -37,6 +38,7 @@
 	}
 	&__type {
 		display: none;
+		text-align: center;
 	}
 
 	&__img {
@@ -53,7 +55,16 @@
 			background-image: url("/dist/img/treatments.png");
 		}
 		&--three {
-			background-image: url("/dist/img/epilation.png");
+			background-image: url("/dist/img/legs.png");
+		}
+		&--four {
+			background-image: url("/dist/img/hands.png");
+		}
+		&--five {
+			background-image: url("/dist/img/pedicure.png");
+		}
+		&--six {
+			background-image: url("/dist/img/trainings.png");
 		}
 	}
 
@@ -96,6 +107,12 @@
 	}
 	&__list--first:nth-of-type(1) .offer__link {
 		font-size: 1.4rem;
+	}
+	&__list--second:nth-of-type(1) .offer__link {
+		font-size: 1.5rem;
+	}
+	&__list--third:nth-of-type(1) .offer__link {
+		margin-top: 10em;
 	}
 	&__link:last-child {
 		border-bottom: unset;

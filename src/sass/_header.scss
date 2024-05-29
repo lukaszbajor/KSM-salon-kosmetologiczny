@@ -1,6 +1,6 @@
 .header {
 	padding: 1em;
-	min-height: 90vh;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,7 +9,17 @@
 	background-position: center;
 	background-size: cover;
 	text-align: center;
-	color: white;
+	color: $pure-white;
+	&__wrap {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
 	&__title {
 		margin-bottom: 0.5em;
 		font-size: 4rem;
@@ -42,6 +52,20 @@
 			margin-top: 1.4em;
 			border: 2px solid $pure-white;
 			background-color: transparent;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.header {
+		&__wrap {
+			padding-left: 2em;
+			align-items: flex-start;
+		}
+		&__btns {
+			flex-direction: row;
+		}
+		&__btn:last-child {
+			margin-left: 1em;
 		}
 	}
 }
