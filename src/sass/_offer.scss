@@ -7,6 +7,8 @@
 	background-attachment: fixed;
 	z-index: 1;
 	&__wrap {
+		max-width: 1200px;
+		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -14,7 +16,7 @@
 	}
 	&__title {
 		margin: 3em 0;
-		font-size: 3rem;
+		font-size: 4rem;
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		color: $pure-white;
@@ -22,11 +24,12 @@
 	&__box {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	&__card {
 		position: relative;
 		margin: 0.5em 0;
-		// margin: 20px 80px;
 		width: 350px;
 		height: 600px;
 		perspective: 800px;
@@ -42,8 +45,6 @@
 		background-position: center;
 		background-size: cover;
 		border-radius: 15px;
-		// border: 2px solid $docs-color;
-
 		transition: 0.8s;
 		&--one {
 			background-image: url("/dist/img/face.png");
@@ -71,7 +72,7 @@
 		// transform: rotateY(-180deg);
 	}
 	&__name {
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 		text-transform: uppercase;
 		font-weight: 400;
 		color: $pure-white;
@@ -101,8 +102,32 @@
 	}
 }
 
+@media (min-width: 576px) {
+	.offer {
+		&__box {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		&__card {
+			margin: 0.5em;
+			flex-basis: 55%;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.offer {
+		&__card {
+			flex-basis: 48%;
+		}
+	}
+}
+
 @media (min-width: 992px) {
 	.offer {
+		&__card {
+			flex-basis: 31%;
+		}
 		&__card:hover .offer__img {
 			transform: rotateY(-180deg);
 			opacity: 0;
