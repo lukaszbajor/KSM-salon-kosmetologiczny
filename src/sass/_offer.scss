@@ -16,10 +16,16 @@
 		align-items: center;
 	}
 	&__title {
-		margin: 3em 0;
+		margin: 2.2em 0 1em 0;
 		font-size: 4rem;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+		color: $pure-white;
+	}
+	&__text {
+		margin-bottom: 2.2em;
+		font-size: 1.8rem;
+		font-weight: 400;
 		color: $pure-white;
 	}
 	&__box {

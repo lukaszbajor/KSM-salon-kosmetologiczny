@@ -91,17 +91,6 @@
 
 @media (min-width: 992px) {
 	.nav {
-		// &__wrap {
-		// 	padding: 1em;
-		// 	display: flex;
-		// 	justify-content: space-between;
-		// 	align-items: center;
-		// }
-		// &__logo {
-		// 	img {
-		// 		height: 80px;
-		// 	}
-		// }
 		&__list {
 			padding-top: unset;
 			display: flex;
@@ -120,9 +109,16 @@
 			margin: 0 1em;
 			font-size: 2rem;
 			font-weight: 400;
+
 			a {
+				padding-bottom: 0.3em;
+				border-bottom: 1px solid transparent;
 				color: $docs-color;
+				transition: border-bottom 0.3s;
 				cursor: pointer;
+			}
+			a:hover {
+				border-bottom: 1px solid $docs-color;
 			}
 		}
 		&__burger {
