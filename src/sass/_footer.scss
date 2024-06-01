@@ -1,9 +1,12 @@
 .footer {
+	display: flex;
+	flex-direction: column;
+	// justify-content: center;
+	align-items: center;
 	background-color: $socials-color;
 	&__box {
 		display: flex;
 		flex-direction: row;
-		align-items: flex-start;
 		flex-wrap: wrap;
 		margin: 0 auto;
 		max-width: 1200px;
@@ -15,20 +18,49 @@
 		flex-direction: column;
 		flex-basis: 55%;
 		margin-bottom: 2em;
+		padding: 1em;
 	}
 	&__title {
 		margin-bottom: 0.5em;
-		font-size: 1.8rem;
+		font-size: 2.2rem;
 		color: $pure-white;
+	}
+	&__list {
+		list-style: none;
 	}
 	&__link {
 		margin-top: 0.5em;
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		font-weight: 300;
+
+		a {
+			text-decoration: none;
+			color: $pure-white;
+			transition: 0.3s;
+			cursor: default;
+		}
+	}
+	&__end {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 1em;
+		display: flex;
+		justify-content: space-between;
 		color: $pure-white;
 	}
-	span {
-		font-weight: bold;
+	&__socials {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		font-size: 3rem;
+		a {
+			color: $pure-white;
+		}
+		a:nth-child(2) {
+			margin-left: 0.5em;
+		}
 	}
 }
 
@@ -42,17 +74,18 @@
 @media (min-width: 992px) {
 	.footer {
 		&__item {
-			flex-basis: 30%;
+			flex-basis: 33%;
+			// padding-left: unset;
 		}
-	}
-}
-@media (min-width: 1400px) {
-	.footer {
-		&__box {
-			justify-content: space-between;
+		&__title {
+			font-size: 1.8rem;
 		}
-		&__item {
-			flex-basis: unset;
+		&__link {
+			font-size: 1.6rem;
+			a:hover {
+				color: $desc-color;
+				cursor: pointer;
+			}
 		}
 	}
 }
