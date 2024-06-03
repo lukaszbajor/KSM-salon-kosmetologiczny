@@ -1,0 +1,83 @@
+.clients {
+	&__wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+	&__title {
+		margin: 2.2em 0.5em 1em 0.5em;
+		font-size: 4rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-align: center;
+		color: $desc-color;
+	}
+	&__text {
+		margin-bottom: 2.2em;
+		font-size: 1.8rem;
+		font-weight: 400;
+		text-align: center;
+		color: $desc-color;
+	}
+	&__box {
+		margin-bottom: 4em;
+		padding: 1em 1.2em;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+	&__item {
+		min-height: 250px;
+		margin: 0 auto;
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid $docs-color;
+		border-radius: 8px;
+	}
+	&__item {
+		min-height: 250px;
+		margin: 0 auto;
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid $docs-color;
+		border-radius: 8px;
+		color: $desc-color;
+		&--gold {
+			border: none;
+			background-color: $docs-color;
+			color: $pure-white;
+		}
+		&--gray {
+			border: none;
+			background-color: $desc-color;
+			color: $pure-white;
+		}
+	}
+
+	&__name {
+		margin-bottom: 1.8em;
+	}
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center; /* Wyśrodkowanie kontenera */
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		color: #000;
+	}
+
+	.swiper-pagination-bullet {
+		background: #000;
+	}
+}

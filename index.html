@@ -2,7 +2,10 @@
 <html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=0"
+		/>
 		<link rel="icon" type="image/png" href="/src/img/fav.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,12 +13,11 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./dist/css/main.min.css" />
 		<link
 			rel="stylesheet"
-			type="text/css"
-			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
 		/>
+		<link rel="stylesheet" href="./dist/css/main.min.css" />
 		<script
 			src="https://kit.fontawesome.com/9bf94860b7.js"
 			crossorigin="anonymous"
@@ -291,7 +293,128 @@
 					</div>
 				</div>
 			</section>
-			<section class="clients">Klienci</section>
+			<!-- <section class="clients">
+				<div class="clients__wrap">
+					<h1 class="clients__title">Opinie klientów</h1>
+					<p class="clients__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat,
+						reiciendis.
+					</p>
+
+					<div class="clients__box">
+						<div class="clients__item">
+							<h3 class="clients__name">Łukasz Bajor</h3>
+							<p class="clients__opinion">
+								"1Serdecznie polecam Salon oraz przesympatyczną Panią Agnieszkę.
+								Jestem bardzo zadowolona ze wszystkich zabiegów z których
+								korzystałam. Podczas wizyty zawszę mogę odpocząć oraz
+								zrelaksować się, ponieważ atmosfera jest bardzo miła. Gorąco
+								pozdrawiam i do zobaczenia."
+							</p>
+						</div>
+						<div class="clients__item">
+							<h3 class="clients__name">Łukasz Bajor</h3>
+							<p class="clients__opinion">
+								"2Serdecznie polecam Salon oraz przesympatyczną Panią Agnieszkę.
+								Jestem bardzo zadowolona ze wszystkich zabiegów z których
+								korzystałam. Podczas wizyty zawszę mogę odpocząć oraz
+								zrelaksować się, ponieważ atmosfera jest bardzo miła. Gorąco
+								pozdrawiam i do zobaczenia."
+							</p>
+						</div>
+						<div class="clients__item">
+							<h3 class="clients__name">Łukasz Bajor</h3>
+							<p class="clients__opinion">
+								"3Serdecznie polecam Salon oraz przesympatyczną Panią Agnieszkę.
+								Jestem bardzo zadowolona ze wszystkich zabiegów z których
+								korzystałam. Podczas wizyty zawszę mogę odpocząć oraz
+								zrelaksować się, ponieważ atmosfera jest bardzo miła. Gorąco
+								pozdrawiam i do zobaczenia."
+							</p>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<section class="clients">
+				<div class="clients__wrap">
+					<h1 class="clients__title">Opinie klientów</h1>
+					<p class="clients__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat,
+						reiciendis.
+					</p>
+
+					<div class="swiper-container clients__box">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide clients__item">
+								<h3 class="clients__name">Łukasz Bajor</h3>
+								<p class="clients__opinion">
+									"1Serdecznie polecam Salon oraz przesympatyczną Panią
+									Agnieszkę. Jestem bardzo zadowolona ze wszystkich zabiegów z
+									których korzystałam. Podczas wizyty zawszę mogę odpocząć oraz
+									zrelaksować się, ponieważ atmosfera jest bardzo miła. Gorąco
+									pozdrawiam i do zobaczenia."
+								</p>
+							</div>
+							<div class="swiper-slide clients__item clients__item--gray">
+								<h3 class="clients__name">Łukasz Bajor</h3>
+								<p class="clients__opinion">
+									"2Serdecznie polecam Salon oraz przesympatyczną Panią
+									Agnieszkę. Jestem bardzo zadowolona ze wszystkich zabiegów z
+									których korzystałam. Podczas wizyty zawszę mogę odpocząć oraz
+									zrelaksować się, ponieważ atmosfera jest bardzo miła. Gorąco
+									pozdrawiam i do zobaczenia."
+								</p>
+							</div>
+							<div class="swiper-slide clients__item">
+								<h3 class="clients__name">Łukasz Bajor</h3>
+								<p class="clients__opinion">
+									"3Serdecznie polecam Salon oraz przesympatyczną Panią
+									Agnieszkę. Jestem bardzo zadowolona ze wszystkich zabiegów z
+									których korzystałam. Podczas wizyty zawszę mogę odpocząć oraz
+									zrelaksować się, ponieważ atmosfera jest bardzo miła. Gorąco
+									pozdrawiam i do zobaczenia."
+								</p>
+							</div>
+							<div class="swiper-slide clients__item">
+								<h3 class="clients__name">Łukasz Bajor</h3>
+								<p class="clients__opinion">
+									"1Serdecznie polecam Salon oraz przesympatyczną Panią
+									Agnieszkę. Jestem bardzo zadowolona ze wszystkich zabiegów z
+									których korzystałam. Podczas wizyty zawszę mogę odpocząć oraz
+									zrelaksować się, ponieważ atmosfera jest bardzo miła. Gorąco
+									pozdrawiam i do zobaczenia."
+								</p>
+							</div>
+							<div class="swiper-slide clients__item clients__item--gold">
+								<h3 class="clients__name">Łukasz Bajor</h3>
+								<p class="clients__opinion">
+									"2Serdecznie polecam Salon oraz przesympatyczną Panią
+									Agnieszkę. Jestem bardzo zadowolona ze wszystkich zabiegów z
+									których korzystałam. Podczas wizyty zawszę mogę odpocząć oraz
+									zrelaksować się, ponieważ atmosfera jest bardzo miła. Gorąco
+									pozdrawiam i do zobaczenia."
+								</p>
+							</div>
+							<div class="swiper-slide clients__item">
+								<h3 class="clients__name">Łukasz Bajor</h3>
+								<p class="clients__opinion">
+									"3Serdecznie polecam Salon oraz przesympatyczną Panią
+									Agnieszkę. Jestem bardzo zadowolona ze wszystkich zabiegów z
+									których korzystałam. Podczas wizyty zawszę mogę odpocząć oraz
+									zrelaksować się, ponieważ atmosfera jest bardzo miła. Gorąco
+									pozdrawiam i do zobaczenia."
+								</p>
+							</div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- Add Navigation -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</section>
+
 			<section class="gift">
 				<h1 class="gift__title">Nie masz pomysłu na prezent?</h1>
 				<p class="gift__text">
@@ -418,11 +541,8 @@
 </footer>
 
 		</div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="../src/js/swiper.js"></script>
 		<script src="../src/js/main.js"></script>
-
-		<script
-			type="text/javascript"
-			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-		></script>
 	</body>
 </html>
