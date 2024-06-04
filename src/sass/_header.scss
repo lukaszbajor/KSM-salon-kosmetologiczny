@@ -64,6 +64,9 @@
 		&__btns {
 			flex-direction: row;
 		}
+		&__btn {
+			cursor: pointer;
+		}
 		&__btn:last-child {
 			margin-left: 1em;
 		}
