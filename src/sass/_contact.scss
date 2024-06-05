@@ -21,6 +21,9 @@
 		text-align: center;
 		color: $desc-color;
 	}
+	&__box {
+		margin: 0 0.5em;
+	}
 
 	&__info {
 		margin-bottom: 1em;
@@ -28,13 +31,13 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 	}
 	&__item {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 1.8rem;
+		font-size: 2rem;
 		color: $desc-color;
 		i {
 			margin: 0.5em 0.5em 0.5em 0;
@@ -46,6 +49,22 @@
 			color: $desc-color;
 			cursor: default;
 		}
+		&:nth-child(6) {
+			margin-bottom: 1.6em;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+	}
+	&__hours {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__sunday {
+		margin-top: 1em;
+		font-size: 1.4rem;
 	}
 
 	&__logo {
@@ -84,9 +103,13 @@
 			a {
 				cursor: pointer;
 			}
+			&:nth-child(6) {
+				margin-bottom: unset;
+			}
 		}
 		&__logo {
 			margin: unset;
+			margin-bottom: 6em;
 			height: 300px;
 			width: 300px;
 		}
