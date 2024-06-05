@@ -1,5 +1,6 @@
 .page {
-	min-height: 100vh;
+	// min-height: 100vh;
+	margin-bottom: 6em;
 	&__wrap {
 		width: 100%;
 		max-width: 1200px;
@@ -10,7 +11,7 @@
 		flex-direction: column;
 	}
 	&__title {
-		margin: 4em 0.5em 1.8em 0.5em;
+		margin: 4em 0.5em 1.2em 0.5em;
 		font-size: 4rem;
 		color: $desc-color;
 		text-align: center;
@@ -18,45 +19,77 @@
 	}
 	&__text {
 		margin-bottom: 1.8em;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		text-align: center;
 		color: $desc-color;
 	}
 	&__box {
-		padding: 1em;
+		padding: 1em 2em;
+		width: 100%;
 	}
 	&__item {
-		margin: 2em 0;
 		// padding: 2em 0;
 		overflow: hidden;
 	}
 	&__bar {
+		padding: 2em 0;
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid $table-color;
+		color: $desc-color;
+		&--openBar {
+			padding: 2em 0 0.5em 0;
+			border-bottom: none;
+			color: $docs-color;
+		}
+	}
+	.fa-angle-down {
+		margin-right: 0.5em;
+		font-size: 3rem;
+		transform: rotate(0);
+		transition: transform 0.3s;
+		&--active {
+			transform: rotate(180deg);
+		}
 	}
 	&__question {
+		margin-left: 0.5em;
+		font-size: 2rem;
 	}
 	&__answer {
-		height: 0;
-		transition: padding 0.3s;
+		margin-left: 0.5em;
 		padding: 0;
+		height: 0;
+		overflow: hidden;
+		text-align: left;
+		color: $desc-color;
+		transition: padding 0.3s;
+
 		&--open {
+			height: auto;
 			padding: 2em 0;
-			margin-bottom: 2em;
+			border-bottom: 1px solid $table-color;
+			// color: $docs-color;
 		}
 	}
 }
+
 @media (min-width: 992px) {
-	.contact {
+	.page {
 		&__text {
-			margin-bottom: 2.2em;
+			font-size: 2rem;
 		}
-		&__box {
-			width: 100%;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-evenly;
-			align-items: center;
+		&__bar {
+			cursor: pointer;
+		}
+
+		&__question {
+			font-size: 2.4rem;
+		}
+		&__answer {
+			font-size: 1.8rem;
 		}
 	}
 }
