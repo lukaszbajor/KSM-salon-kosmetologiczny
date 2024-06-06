@@ -21,7 +21,7 @@
 	}
 
 	&__title {
-		margin-bottom: 0.5em;
+		margin: 2em 0 0.5em 0;
 		font-size: 4rem;
 		text-transform: uppercase;
 	}
@@ -30,6 +30,7 @@
 		font-size: 2rem;
 	}
 	&__btns {
+		margin-bottom: 1em;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
