@@ -5,6 +5,8 @@ const allMenuItems = document.querySelectorAll(".nav__link");
 const allBars = document.querySelectorAll(".page__bar");
 const allArrows = document.querySelectorAll(".fa-angle-down");
 
+const footerYear = document.querySelector(".footer__year");
+
 const menuBurger = () => {
 	burger.classList.toggle("nav__burger--active");
 	menu.classList.toggle("nav__list--showMenu");
@@ -42,3 +44,9 @@ allBars.forEach((bar) => {
 		}
 	});
 });
+
+const currentYear = function () {
+	const year = new Date().getFullYear();
+	footerYear.textContent = year + " ";
+};
+currentYear();
